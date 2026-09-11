@@ -1,77 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đào tạo HUMG</title>
-    <style>
-        .menu {
-            background-color: #2fa4e7;
-            margin: 0;
+    <title>Đào tạo Humg</title>
+    <style> 
+        body{
+            margin: 0px;
         }
-
-        .danh-sach {
-            /* bỏ dấu chấm của list */
+        .menu{
+            background-color: #2fa4e7;
+        }
+        .danh-sach-muc{
             list-style: none;
             margin: 0px;
             display: flex;
+            padding: 10px;
+            /* set các đối tượng bọc ở trong khối tự động cách nhau khoảng cách = giá trị truyền vào */
+            gap: 15px;
         }
-
-        .muc {
-            padding: 15px;
-        }
-
-        a {
+        a{
             color: white;
             text-decoration: none;
-
+        }
+        main{
+            display: flex;
+        }
+        .khoi-trai{
+            width: 20%;
+            height: 90vh;
+            /* để vẽ viền dùng border 
+                border sẽ có 3 tham số (độ dày - loại đường viền - màu sắc )*/
+            border-right: 1px solid #2fa4e7;
+        }
+        .khoi-dang-nhap{
+            width: 90%;
+            height: 300px;
+            /* Nếu margin để auto sẽ căn đối tượng ra giữa  */
+            margin: 10px auto;
+        }
+        input{
+            width: 100%;
+            padding: 5px 0;
+            border-radius: 5px;
+            border: 1px solid pink;
+        }
+        .quen-mk{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .lien-ket-quen-mk{
+            text-decoration: none;
+            color: #2fa4e7;
+        }
+        .thông-tin{
+            margin-bottom: 10px;
+        }
+        button{
+            width: 100%;
+            padding: 5px 0;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #2fa4e7;
+        }
+        .dang-nhap{
+            background-color:#2fa4e7 ;
+        }
+        .dang-nhap-365{
+            background-color: #0078D4;
+        }
+        .khoi-phai{
+            width: 80%;
+            height: 90vh;
+        }
+        .tin{
+            width: 95%;
+            height: 300px;
+            margin: 20px auto;
+            border: 1px solid #2fa4e7;
+            border-radius: 10px;
+        }
+        .tin-tren{
+            width: 95%;
+            margin: auto;
+            border-bottom: 1px solid #2fa4e7;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        p{
+            margin: 0px;
+        }
+        h3{
+            margin: 0;
+        }
+        .xem-tiep{
+            color: #2fa4e7;
+            text-decoration: none;
         }
     </style>
 </head>
-
-<body >
-    
-    <!-- Danh mục- thanh menu -->
-
+<body>
+    <!-- Danh mục -->
     <nav class="menu">
-        <ul class="danh-sach">
+        <ul class="danh-sach-muc">
             <li class="muc"><a href="a">Thực tập, Đồ án</a></li>
-            <li class="muc"><a href="a">Thủ tục Một cửa</a></li>
-            <li class="muc"><a href="a"> Một Cửa Online</a></li>
-            <li class="muc"><a href="a"> E-mail HUMG</a></li>
+            <li class="muc"><a href="a">Thủ tục một cửa</a></li>
+            <li class="muc"><a href="a">Một cửa Online</a></li>
+            <li class="muc"><a href="a">E-mail Humg</a></li>
+        </ul>
     </nav>
-<!-- Nội dụng chính -->
- <style>
-    main{
-        display: flex;
-    }
-    .khoi-trai{
-        background-color: blue;
-        width: 20%;
-        height: 500px;
-    }
-    .khoi-phai{
-        background-color: green;
-        width: 80%;
-        height: 500px;
-    }
-    .dang-nhap{
-        background-color: gray;
-        height: 200px;
-    }
- </style>
- <main>
-    <div class="khoi-trai">
-        <div>
-            <form action="">
-                <p>Tài khoản</p>
-                <input type="text">
-            </form>
+    <main>
+        <div class="khoi-trai">
+            <div class="khoi-dang-nhap">
+                <form action>
+                    <div class="thông-tin">
+                        <p>tài khoản</p>
+                        <input type="text">
+                    </div>
+                    <div class="thông-tin">
+                        <p>mật khẩu</p>
+                        <input type="password">
+                    </div>
+                    <div class="quen-mk">
+                        <i>
+                            <a class="lien-ket-quen-mk" href="#">Quên mật khẩu?</a>
+                        </i>
+                    </div>
+                    <div class="chuc-nang-dang-nhap">
+                        <i>
+                            <button class="dang-nhap">Đăng nhập</button>
+                            <button class="dang-nhap-365">Đăng nhập với Microsoft office 365</button>
+                        </i>
+                    </div>
+                </form>
+            </div>
+            
+            <div>
+                
+            </div>
         </div>
-    </div> 
-    <div class="khoi-phai">Phải</div>
- </main>
+        <div class="khoi-phai">
+            <div class="tin">
+                <div class="tin-tren">
+                    <h3 class="tieu-de">tin tức</h3>
+                    <p><a class=xem-tiep href=""></a>xem tiếp</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
-
 </html>
