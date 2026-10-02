@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7</title>
+</head>
+<body>
+    <!-- internal javaScript -->
+    <!-- <script>
+        document.writeln("Hê<br> lô world!")
+        </script>
+        <-- Có thể để mã nguồn html trong java
+         lưu ý: html phải đặt trong dấu "" -->
+         <!-- <script src="script.js"></script> -->
+         <script>  -->
+         var TenSinhVien = "Đặng Việt";
+         var tuoi = 21;
+         document.writeln(TenSinhVien +"<br>" + tuoi + "<br>")
+         var soThuNhat = 10;
+         var soThuHai = 5;
+         // + - */
+         // % chia lấy phần dư
+         var KetQua = soThuNhat + soThuHai;
+         document.writeln("Kết quả là: " + KetQua)
+         //++ --
+         document.writeln(++soThuNhat)
+         document.writeln(--soThuHai)
+         //+= -= *= %=
+         //tương đương: số thứ 2 = số thứ 2+số thứ 1
+         soThuHai-=soThuNhat
+         document.writeln(soThuHai)
+         //kiểu dữ liệu
+         //string
+         //number
+         // boolean (true or false)
+         var a = "10";
+         var b = "5.7";
+         //chuyển string sang number dùng: parseInt()
+         //parsefloat dùng số thực
+         var tong = parseInt(a) + parseFloat(b)
+         document.writeln(tong)
+         //string
+         document.writeln("<br>")
+         //kiểm tra độ dài: length
+         document.writeln(TenSinhVien.length)
+         //nối chuỗi dùng +
+         //kiểm tra tồn tại
+         //indexOf tìm vị trí xuất hiện bắt đầu từ 0 nếu không có là -1
+         document.writeln("<br>")
+         document.writeln(TenSinhVien.indexOf("V"))
+         document.writeln("<br>")
+         // includes kiểm tra xem từ trong chuỗi có hay không có=true, không =false
+         document.writeln(TenSinhVien.includes("o"))
+         //replace
+         document.writeln("<br>")
+         document.writeln(TenSinhVien.replace("Việt","Đặng Đặng"))
+         //kiểm tra ký tự bắt đầu 
+         document.writeln("<br>")
+         document.writeln(TenSinhVien.startsWith("Đặng"))
+         //viết in hoa
+         document.writeln("<br>")
+         document.writeln(TenSinhVien.toUpperCase())
+         //viết thường
+         document.writeln("<br>")
+         document.writeln(TenSinhVien.toLocaleLowerCase())
+        //date
+        var homNay = new Date();
+        document.writeln("<br>");
+        document.writeln(homNay);
+        var Ngay=new Date("05/31/2100");
+        document.writeln("<br>");
+        document.writeln(Ngay);
+        //lấy tháng
+        var thang = homNay.getMonth();
+        document.writeln("<br>");
+        document.writeln(thang);
+        //lấy ngày
+        var ngay = homNay.getDate();
+        document.writeln("<br>");
+        document.writeln(ngay);
+        var thu = homNay.getDay();
+         document.writeln("<br>");
+         document.writeln(thu);
+        var nam = homNay.getFullYear();
+        document.writeln("<br>");
+        document.writeln(nam);
+        var namSinh = nam - tuoi;
+        document.writeln("<br>");
+        document.writeln("Việt sinh năm " + namSinh);
+        //mảng (array)
+        var mangSo = [1,2,3,4,5];
+        var mangTen = ["Inzaghi","Charles Leclerc","Sir Andy Murray"];
+        var thongtin = ["wimbledon", 2007, true];
+         document.writeln("<br>");
+         document.writeln(mangSo[2]);
+          document.writeln("<br>");
+         document.writeln(mangTen[0]);
+          document.writeln("<br>");
+         document.writeln(thongtin[0]);
+         //kiểm tra độ dài mảng length
+          document.writeln("<br>");
+          document.writeln(mangSo.length);
+          //concat gộp mảng
+          var mang = mangSo.concat(mangTen, thongtin);
+          document.writeln(mang);
+          //join các phần tử ngăn cách với nhau bằng dấu gạch ngang
+           document.writeln("<br>");
+           document.writeln(mangSo.join("-"));
+          //pop lấy số cuối cùng
+           document.writeln("<br>");
+           document.writeln(mangSo.pop());
+           //push thêm phần tử
+            document.writeln("<br>");
+            mangSo.push(6);
+            document.writeln(mangSo);
+            //reverse đảo ngược lại dãy
+             document.writeln("<br>");
+             document.writeln(mangSo.reverse());
+             // == so sánh =
+             // != so sánh khác
+             // <
+             // >
+             // >=
+             // <=
+              document.writeln("<br>");
+              document.writeln(soThuHai == soThuNhat)
+              // && 
+              var c = 10;
+              var d = 5.5;
+              //true & true = true
+              // true & false = false
+              //false & false
+               document.writeln("<br>");
+               document.writeln((soThuNhat > soThuHai) && (c<d));
+               //true ||false = 
+                document.writeln("<br>");
+                document.writeln((soThuNhat > soThuHai) || (c<d));
+                // var thu= homNay.getDay();
+                 document.writeln(thu);
+                 if (thu == 5){
+                    document.writeln("Hôm nay là thứ 6");
+                 }
+                 else{
+                    document.writeln("Hôm nay không phải là chủ nhật");
+                 }
+                  document.writeln("<br>");
+                   
+                 //0-4 F
+                 //4-5 D
+                 //5-7 c
+                 // 7-8 B
+                 // 8-9 A
+                 // 9-10 A+
+                var diem = 6.8;
+                if (diem <= 4){
+                    document.writeln("Học lại điểm F");
+                }
+                else if( diem < 5 ) {
+                    document.writeln("qua môn điểm D");
+                }
+                else if( diem < 7 ) {
+                    document.writeln("qua môn điểm C");
+                }
+                else if( diem < 8 ) {
+                    document.writeln("qua môn điểm B");
+                }
+                else if( diem < 9 ) {
+                    document.writeln("qua môn điểm A");
+                }
+                else{
+                    document.writeln("qua môn điểm A+");
+                }
+             
+
+
+         </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+.danh-sach-muc{
+    display: flex;
+    gap: 5px;
+    padding: 0 20px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-color: #111;
+}
+.avatar{
+    border-radius: 20px;
+    width: 40px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    background-color: #0e7fe1;
+}
+main{
+    margin: 15px;
+    color: white;
+}
+.khung-danh-sach{
+    border: 1px solid #008bd0;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #111;
+}
+.menu{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.khung-chon{
+    height: 36px;
+    padding: 0 12px;
+    border: 2px solid #555;
+    border-radius: 6px;
+    background-color: #171717;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+h3{
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #008bd0;
+    color: #ddd;
+    font-size: 16px;
+}
+.tuan-hoc-menu{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+.tuan-hoc{
+    height: 36px;
+    padding: 0 12px;
+    border: 2px solid #555;
+    border-radius: 6px;
+    background-color: #171717;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.nut-in{
+    height: 36px;
+    padding: 0 25px;
+    border-radius: 6px;
+    border: 2px solid #008bd0;
+    background-color: #171717;
+    color: #008bd0;
+}
+.nut-in:hover{
+    background-color: #009fe3;
+    color: white;
+}
+.note{
+    display: flex;
+    gap: 15px;
+    margin-left: 10px;
+    color: #ddd;
+    font-size: 13px;
+}
+.note div{
+display: flex;
+align-items: center;
+gap: 5px;
+}
+.note i{
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 2px;
+}
+.tim{
+    background-color: purple;
+}
+.vang{
+    background-color: yellow    ;
+}
+.dong-dau{
+    background-color: #008bd0;
+    border-radius: 6px;
+    
+}
+.mon-hoc{
+    background-color: #223c556;
+    border: 1px solid #008bd0;
+    color: white;
+    padding: 0px;
+    font-size: 12px;
+    vertical-align: top;
+    line-height: 1.4;
+}
+td{
+    padding: 10px;
+    width: 10%;
+    border-radius: ;
+}
