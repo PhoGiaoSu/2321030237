@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 9 - js</title>
+</head>
+<body>
+    <div>
+        Họ và tên: <input type = "text" id = "hoVaTen">
+    </div>
+    <div>
+        <button onclick="xinChao('Phó Giáo Sư', 20)">Xin chào</button>
+    </div>
+    <div>
+        Kết quả: <input type="text" id = "KetQua">
+    </div>
+    <div>
+        Số thứ nhất: <input type="number" id="s1">
+    </div>
+    <div>
+        Số thứ 2: <input type="number" id="s2">
+    </div>
+    <div>
+        <button onclick="tinhTong()">Tính tổng</button>
+    </div>
+    <div>
+        Kết quả: <input type="number" id="tong">
+    </div>
+<script>
+    //function
+    //để tạo function dùng cú pháp
+    //1: hàm không có tham số
+    //function + tên (){}
+    
+   function tinhTong(){
+    var s1 = Number(document.getElementById("s1").value);
+    var s2 = Number(document.getElementById("s2").value);
+    var tong = s1 + s2;
+    document.getElementById("tong").value = tong;
+}
+    // gọi hàm
+    xinChao();
+    //2: hàm có tham số
+    // functiom + tên(){}
+    //lưu ý: các tham số ngăn cách nhau = dấu ,
+    function xinchao2(ten, tuoi){
+        document.writeln("XIN CHÀO " + ten + tuoi + " tuổi")
+    }
+    xinchao2("việt ", 20 )
+    // sửa hàm xinchao2 in ra xin chào + tên + tuổi
+    //tạo hàm tính chu vi hình chữ nhật
+    function chuvi(cd, cr){
+        document.writeln( "Chu vi hình chữ nhật là " + [(cd + cr)*2])
+    }
+    chuvi(4, 5)
+    var danhSachSinhVien = ["Thủy", "Dương", "Việt", "Huệ", "Thắng"];
+    //dùng for in ra xin chào từng tên một
+    for (var i = 0; i < danhSachSinhVien.length; i++){
+        if( danhSachSinhVien[i] !="Việt"){
+        document.writeln("<br>" + "Xin chào bác " + danhSachSinhVien[i])
+    }
+}
+//hàm có 2 tham số
+//danh sách sinh viên, Tên sinh viên cần tìm
+//đầu ra: Nếu có thì in ra danh sách sinh viên, nếu không: không có svien
+function timKiemSinhVien(ds, ten){
+    var coSinhvien = false;
+    for( var i = 0;i < ds.length; i++){
+        if (ds[i] == ten){
+            coSinhvien = true;
+        }
+    }
+    if (coSinhvien == true){
+        document.writeln( "<br> CÓ sinh viên " + ten + " trong danh sách")
+    }
+    else{
+        document.writeln("<br> Không có sinh viên " + ten + " trong danh sách")
+    }
+}
+timKiemSinhVien(danhSachSinhVien, "Việt")
+</script>
+</body>
+</html>

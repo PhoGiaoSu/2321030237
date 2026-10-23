@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 7</title>
 </head>
+
 <body>
     <!-- internal javaScript -->
     <!-- <script>
@@ -12,63 +14,63 @@
         </script>
         <-- Có thể để mã nguồn html trong java
          lưu ý: html phải đặt trong dấu "" -->
-         <!-- <script src="script.js"></script> -->
-         <script>  
-         var TenSinhVien = "Đặng Việt";
-         var tuoi = 21;
-         document.writeln(TenSinhVien +"<br>" + tuoi + "<br>")
-         var soThuNhat = 10;
-         var soThuHai = 5;
-         // + - */
-         // % chia lấy phần dư
-         var KetQua = soThuNhat + soThuHai;
-         document.writeln("Kết quả là: " + KetQua)
-         //++ --
-         document.writeln(++soThuNhat)
-         document.writeln(--soThuHai)
-         //+= -= *= %=
-         //tương đương: số thứ 2 = số thứ 2+số thứ 1
-         soThuHai-=soThuNhat
-         document.writeln(soThuHai)
-         //kiểu dữ liệu
-         //string
-         //number
-         // boolean (true or false)
-         var a = "10";
-         var b = "5.7";
-         //chuyển string sang number dùng: parseInt()
-         //parsefloat dùng số thực
-         var tong = parseInt(a) + parseFloat(b)
-         document.writeln(tong)
-         //string
-         document.writeln("<br>")
-         //kiểm tra độ dài: length
-         document.writeln(TenSinhVien.length)
-         //nối chuỗi dùng +
-         //kiểm tra tồn tại
-         //indexOf tìm vị trí xuất hiện bắt đầu từ 0 nếu không có là -1
-         document.writeln("<br>")
-         document.writeln(TenSinhVien.indexOf("V"))
-         document.writeln("<br>")
-         // includes kiểm tra xem từ trong chuỗi có hay không có=true, không =false
-         document.writeln(TenSinhVien.includes("o"))
-         //replace
-         document.writeln("<br>")
-         document.writeln(TenSinhVien.replace("Việt","Đặng Đặng"))
-         //kiểm tra ký tự bắt đầu 
-         document.writeln("<br>")
-         document.writeln(TenSinhVien.startsWith("Đặng"))
-         //viết in hoa
-         document.writeln("<br>")
-         document.writeln(TenSinhVien.toUpperCase())
-         //viết thường
-         document.writeln("<br>")
-         document.writeln(TenSinhVien.toLocaleLowerCase())
+    <!-- <script src="script.js"></script> -->
+    <script>
+        var TenSinhVien = "Đặng Việt";
+        var tuoi = 21;
+        document.writeln(TenSinhVien + "<br>" + tuoi + "<br>")
+        var soThuNhat = 10;
+        var soThuHai = 5;
+        // + - */
+        // % chia lấy phần dư
+        var KetQua = soThuNhat + soThuHai;
+        document.writeln("Kết quả là: " + KetQua)
+        //++ --
+        document.writeln(++soThuNhat)
+        document.writeln(--soThuHai)
+        //+= -= *= %=
+        //tương đương: số thứ 2 = số thứ 2+số thứ 1
+        soThuHai -= soThuNhat
+        document.writeln(soThuHai)
+        //kiểu dữ liệu
+        //string
+        //number
+        // boolean (true or false)
+        var a = "10";
+        var b = "5.7";
+        //chuyển string sang number dùng: parseInt()
+        //parsefloat dùng số thực
+        var tong = parseInt(a) + parseFloat(b)
+        document.writeln(tong)
+        //string
+        document.writeln("<br>")
+        //kiểm tra độ dài: length
+        document.writeln(TenSinhVien.length)
+        //nối chuỗi dùng +
+        //kiểm tra tồn tại
+        //indexOf tìm vị trí xuất hiện bắt đầu từ 0 nếu không có là -1
+        document.writeln("<br>")
+        document.writeln(TenSinhVien.indexOf("V"))
+        document.writeln("<br>")
+        // includes kiểm tra xem từ trong chuỗi có hay không có=true, không =false
+        document.writeln(TenSinhVien.includes("o"))
+        //replace
+        document.writeln("<br>")
+        document.writeln(TenSinhVien.replace("Việt", "Đặng Đặng"))
+        //kiểm tra ký tự bắt đầu 
+        document.writeln("<br>")
+        document.writeln(TenSinhVien.startsWith("Đặng"))
+        //viết in hoa
+        document.writeln("<br>")
+        document.writeln(TenSinhVien.toUpperCase())
+        //viết thường
+        document.writeln("<br>")
+        document.writeln(TenSinhVien.toLocaleLowerCase())
         //date
         var homNay = new Date();
         document.writeln("<br>");
         document.writeln(homNay);
-        var Ngay=new Date("05/31/2100");
+        var Ngay = new Date("05/31/2100");
         document.writeln("<br>");
         document.writeln(Ngay);
         //lấy tháng
@@ -80,8 +82,8 @@
         document.writeln("<br>");
         document.writeln(ngay);
         var thu = homNay.getDay();
-         document.writeln("<br>");
-         document.writeln(thu);
+        document.writeln("<br>");
+        document.writeln(thu);
         var nam = homNay.getFullYear();
         document.writeln("<br>");
         document.writeln(nam);
@@ -89,89 +91,89 @@
         document.writeln("<br>");
         document.writeln("Việt sinh năm " + namSinh);
         //mảng (array)
-        var mangSo = [1,2,3,4,5];
-        var mangTen = ["Inzaghi","Charles Leclerc","Sir Andy Murray"];
+        var mangSo = [1, 2, 3, 4, 5];
+        var mangTen = ["Inzaghi", "Charles Leclerc", "Sir Andy Murray"];
         var thongtin = ["wimbledon", 2007, true];
-         document.writeln("<br>");
-         document.writeln(mangSo[2]);
-          document.writeln("<br>");
-         document.writeln(mangTen[0]);
-          document.writeln("<br>");
-         document.writeln(thongtin[0]);
-         //kiểm tra độ dài mảng length
-          document.writeln("<br>");
-          document.writeln(mangSo.length);
-          //concat gộp mảng
-          var mang = mangSo.concat(mangTen, thongtin);
-          document.writeln(mang);
-          //join các phần tử ngăn cách với nhau bằng dấu gạch ngang
-           document.writeln("<br>");
-           document.writeln(mangSo.join("-"));
-          //pop lấy số cuối cùng
-           document.writeln("<br>");
-           document.writeln(mangSo.pop());
-           //push thêm phần tử
-            document.writeln("<br>");
-            mangSo.push(6);
-            document.writeln(mangSo);
-            //reverse đảo ngược lại dãy
-             document.writeln("<br>");
-             document.writeln(mangSo.reverse());
-             // == so sánh =
-             // != so sánh khác
-             // <
-             // >
-             // >=
-             // <=
-              document.writeln("<br>");
-              document.writeln(soThuHai == soThuNhat)
-              // && 
-              var c = 10;
-              var d = 5.5;
-              //true & true = true
-              // true & false = false
-              //false & false
-               document.writeln("<br>");
-               document.writeln((soThuNhat > soThuHai) && (c<d));
-               //true ||false = 
-                document.writeln("<br>");
-                document.writeln((soThuNhat > soThuHai) || (c<d));
-                // var thu= homNay.getDay();
-                 document.writeln(thu);
-                 if (thu == 5){
-                    document.writeln("Hôm nay là thứ 6");
-                 }
-                 else{
-                    document.writeln("Hôm nay không phải là chủ nhật");
-                 }
-                  document.writeln("<br>");
-                   
-                 //0-4 F
-                 //4-5 D
-                 //5-7 c
-                 // 7-8 B
-                 // 8-9 A
-                 // 9-10 A+
-                var diem = 6.8;
-                if (diem <= 4){
-                    document.writeln("Học lại điểm F");
-                }
-                else if( diem < 5 ) {
-                    document.writeln("qua môn điểm D");
-                }
-                else if( diem < 7 ) {
-                    document.writeln("qua môn điểm C");
-                }
-                else if( diem < 8 ) {
-                    document.writeln("qua môn điểm B");
-                }
-                else if( diem < 9 ) {
-                    document.writeln("qua môn điểm A");
-                }
-                else{
-                    document.writeln("qua môn điểm A+");
-                }
-             
+        document.writeln("<br>");
+        document.writeln(mangSo[2]);
+        document.writeln("<br>");
+        document.writeln(mangTen[0]);
+        document.writeln("<br>");
+        document.writeln(thongtin[0]);
+        //kiểm tra độ dài mảng length
+        document.writeln("<br>");
+        document.writeln(mangSo.length);
+        //concat gộp mảng
+        var mang = mangSo.concat(mangTen, thongtin);
+        document.writeln(mang);
+        //join các phần tử ngăn cách với nhau bằng dấu gạch ngang
+        document.writeln("<br>");
+        document.writeln(mangSo.join("-"));
+        //pop lấy số cuối cùng
+        document.writeln("<br>");
+        document.writeln(mangSo.pop());
+        //push thêm phần tử
+        document.writeln("<br>");
+        mangSo.push(6);
+        document.writeln(mangSo);
+        //reverse đảo ngược lại dãy
+        document.writeln("<br>");
+        document.writeln(mangSo.reverse());
+        // == so sánh =
+        // != so sánh khác
+        // <
+        // >
+        // >=
+        // <=
+        document.writeln("<br>");
+        document.writeln(soThuHai == soThuNhat)
+        // && 
+        var c = 10;
+        var d = 5.5;
+        //true & true = true
+        // true & false = false
+        //false & false
+        document.writeln("<br>");
+        document.writeln((soThuNhat > soThuHai) && (c < d));
+        //true ||false = 
+        document.writeln("<br>");
+        document.writeln((soThuNhat > soThuHai) || (c < d));
+        // var thu= homNay.getDay();
+        document.writeln(thu);
+        if (thu == 5) {
+            document.writeln("Hôm nay là thứ 6");
+        }
+        else {
+            document.writeln("Hôm nay không phải là chủ nhật");
+        }
+        document.writeln("<br>");
+
+        //0-4 F
+        //4-5 D
+        //5-7 c
+        // 7-8 B
+        // 8-9 A
+        // 9-10 A+
+        var diem = 6.8;
+        if (diem <= 4) {
+            document.writeln("Học lại điểm F");
+        }
+        else if (diem < 5) {
+            document.writeln("qua môn điểm D");
+        }
+        else if (diem < 7) {
+            document.writeln("qua môn điểm C");
+        }
+        else if (diem < 8) {
+            document.writeln("qua môn điểm B");
+        }
+        else if (diem < 9) {
+            document.writeln("qua môn điểm A");
+        }
+        else {
+            document.writeln("qua môn điểm A+");
+        }
+
 
         //object: var name = { }
         var thongTinSInhVien = {
@@ -185,18 +187,18 @@
             }
         };
         var boPhim = {
-            tenPhim: "Doraemon", 
+            tenPhim: "Doraemon",
             thoiLuong: 136,
             daoDien: "Đặng Quốc Việt",
             quocGia: "Nhật Bản",
             ngonNgu: true, //true: tiếng việt, flase: tiếng Anh
             dienVien: {
                 dienVienChinh: [
-                    "Cristiano Ronaldo","Dominic Calvert-Lewin"
-            ],
+                    "Cristiano Ronaldo", "Dominic Calvert-Lewin"
+                ],
                 dienVienPhu: [
-                    "Franco Colapinto","Lando Norris"
-            ],
+                    "Franco Colapinto", "Lando Norris"
+                ],
             },
             tomTatPhim: "Doraemon (Mùa 13) là bộ phim hoạt hình kể về chú mèo máy Doraemon từ thế kỉ 22 quay về giúp cậu bé hậu đậu Nobita vượt qua rắc rối bằng những bảo bối thần kỳ. Mỗi câu chuyện hài hước đều mang đến bài học ý nghĩa về cách sử dụng sức mạnh và trách nhiệm.",
             ngayChieu: "01/10/2011",
@@ -209,33 +211,47 @@
         var d = new Date();
         var theDay = d.getDay();
         switch (theDay) {
-            case 5: 
-            document.writeln("finally Friday");
-            break;
+            case 5:
+                document.writeln("finally Friday");
+                break;
             case 6:
                 document.writeln("Super Saturday");
                 break;
-            case 0: 
-            document.writeln("sleepy Sunday");
-            break;
+            case 0:
+                document.writeln("sleepy Sunday");
+                break;
             default:
                 document.writeln("I'm looking foward to this weekend!");
         }
-        for (var index =1; index <=10; index++){
+        for (var index = 1; index <= 10; index++) {
             document.writeln("<br> hà há " + index)
         }
         var danhSachSinhVien = ["Việt", "Đức", "Kiên", "Tùng", "Huy"];
         document.writeln("<br> Kính Chào Bố " + danhSachSinhVien[0] + " ạ");
-        for ( var i =0; i < danhSachSinhVien.length;i++){
+        for (var i = 0; i < danhSachSinhVien.length; i++) {
             document.writeln("<br>" + i + "<br>");
             document.writeln("Con chào Bố " + danhSachSinhVien[i] + " ạ")
-        
-            if (danhSachSinhVien[i] == "Việt"||danhSachSinhVien[i] == "Kiên"){
+
+            if (danhSachSinhVien[i] == "Việt" || danhSachSinhVien[i] == "Kiên") {
                 document.writeln("<br> Xin chào " + danhSachSinhVien[i]);
             }
         }
-        
+        // popup boxes
+        alert("Xin chào!");
+        // confirm 
+        var r = confirm("Nhấn nút")
+        if (r == true) {
+            document.writeln("you press ok!")
+        }
+        else {
+            document.writeln("you press cancel!")
+        }
+        //promt
+        r = prompt("Nhập họ tên", "nhập họ tên vào đây!");
+        document.writeln(r)
 
-         </script>
+
+    </script>
 </body>
+
 </html>
