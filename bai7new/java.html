@@ -13,7 +13,7 @@
         <-- Có thể để mã nguồn html trong java
          lưu ý: html phải đặt trong dấu "" -->
          <!-- <script src="script.js"></script> -->
-         <script>  -->
+         <script>  
          var TenSinhVien = "Đặng Việt";
          var tuoi = 21;
          document.writeln(TenSinhVien +"<br>" + tuoi + "<br>")
@@ -173,6 +173,68 @@
                 }
              
 
+        //object: var name = { }
+        var thongTinSInhVien = {
+            hoTen: "Dang Quoc Viet",
+            tuoi: 21,
+            gioiTinh: true, //true: nam, false: nữ
+            diaChi: {
+                thanhPho: "Quang Ninh",
+                phuong: "Trung Vuong",
+                duong: "Trung Nhi",
+            }
+        };
+        var boPhim = {
+            tenPhim: "Doraemon", 
+            thoiLuong: 136,
+            daoDien: "Đặng Quốc Việt",
+            quocGia: "Nhật Bản",
+            ngonNgu: true, //true: tiếng việt, flase: tiếng Anh
+            dienVien: {
+                dienVienChinh: [
+                    "Cristiano Ronaldo","Dominic Calvert-Lewin"
+            ],
+                dienVienPhu: [
+                    "Franco Colapinto","Lando Norris"
+            ],
+            },
+            tomTatPhim: "Doraemon (Mùa 13) là bộ phim hoạt hình kể về chú mèo máy Doraemon từ thế kỉ 22 quay về giúp cậu bé hậu đậu Nobita vượt qua rắc rối bằng những bảo bối thần kỳ. Mỗi câu chuyện hài hước đều mang đến bài học ý nghĩa về cách sử dụng sức mạnh và trách nhiệm.",
+            ngayChieu: "01/10/2011",
+            theLoai: "Tình cảm",
+            doTuoi: 18,
+        }
+        document.writeln("<br>");
+        document.writeln(boPhim.theLoai);
+        document.writeln("<br>");
+        var d = new Date();
+        var theDay = d.getDay();
+        switch (theDay) {
+            case 5: 
+            document.writeln("finally Friday");
+            break;
+            case 6:
+                document.writeln("Super Saturday");
+                break;
+            case 0: 
+            document.writeln("sleepy Sunday");
+            break;
+            default:
+                document.writeln("I'm looking foward to this weekend!");
+        }
+        for (var index =1; index <=10; index++){
+            document.writeln("<br> hà há " + index)
+        }
+        var danhSachSinhVien = ["Việt", "Đức", "Kiên", "Tùng", "Huy"];
+        document.writeln("<br> Kính Chào Bố " + danhSachSinhVien[0] + " ạ");
+        for ( var i =0; i < danhSachSinhVien.length;i++){
+            document.writeln("<br>" + i + "<br>");
+            document.writeln("Con chào Bố " + danhSachSinhVien[i] + " ạ")
+        
+            if (danhSachSinhVien[i] == "Việt"||danhSachSinhVien[i] == "Kiên"){
+                document.writeln("<br> Xin chào " + danhSachSinhVien[i]);
+            }
+        }
+        
 
          </script>
 </body>
