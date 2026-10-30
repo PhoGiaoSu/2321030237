@@ -32,7 +32,7 @@
     <main>
         <!-- Nội dung chính trang -->
         <div class="banner">
-            <img class="banner-img" src="f1.jpg">
+            <img class="banner-img" src="f1.jpg" >
         </div>
         <!-- Thể loại -->
         <div class="the-loai">
@@ -40,19 +40,19 @@
                 <h3 font size="5">Tổng hợp AC Milan hủy diệt</h3>
             </div>
             <div class="danh-sach-phim">
-                <div class="phim">
+                <div onclick="chonPhim(1)" class="phim">
                     <img src="milan1.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(2)" class="phim">
                     <img src="mian2.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(3)" class="phim">
                     <img src="milan3.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(4)" class="phim">
                     <img src="milan4.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(5)" class="phim">
                     <img src="milan5.jpg" alt="">
                 </div>
             </div>
@@ -62,19 +62,19 @@
                 <h3 font size="5">It's light out and away we go</h3>
             </div>
             <div class="danh-sach-phim">
-                <div class="phim">
+                <div onclick="chonPhim(6)" class="phim">
                     <img src="f11.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(7)" class="phim">
                     <img src="f12.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(8)" class="phim">
                     <img src="f13.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(9)" class="phim">
                     <img src="f14.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(10)" class="phim">
                     <img src="f15.jpg" alt="">
                 </div>
             </div>
@@ -84,19 +84,19 @@
                 <h3 font size="5">Tennis</h3>
             </div>
             <div class="danh-sach-phim">
-                <div class="phim">
+                <div onclick="chonPhim(11)" class="phim">
                     <img src="tennis1.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(12)" class="phim">
                     <img src="tennis2.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(13)" class="phim">
                     <img src="tennis3.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(14)" class="phim">
                     <img src="tennis4.jpg" alt="">
                 </div>
-                <div class="phim">
+                <div onclick="chonPhim(15)" class="phim">
                     <img src="tennis5.jpg" alt="">
                 </div>
             </div>
@@ -136,5 +136,95 @@
 
     </footer>
 </body>
+<script>
+    var danhSachPhim = [
+        {
+            id: 1,
+            duongDanAnh: "milan1.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/j5q3RlVYkIo",
+        },
+        {
+            id: 2,
+            duongDanAnh: "milan2.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/RjRNQ4Bvfso" ,
+        },
+        {
+            id: 3,
+            duongDanAnh: "milan3.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/HhZd5yvMQlw",
+        },
+        {
+            id: 4,
+            duongDanAnh: "milan4.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/HB3JnHb_IG4",
+        },
+        {
+            id: 5,
+            duongDanAnh: "milan5.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/NKSkIs6OfFo",
+        },
+        {
+            id: 6,
+            duongDanAnh: "f11.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/ipOT9ruRobc",
+        },
+        {
+            id: 7,
+            duongDanAnh: "f12.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/I6RfOY_7leA",
+        },
+        {
+            id: 8,
+            duongDanAnh: "f13.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/uptj3to1l7o",
+        },
+        {
+            id: 9,
+            duongDanAnh: "f14.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/3OMLs3yI-KE",
+        },
+        {
+            id: 10,
+            duongDanAnh: "f15.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/t8HpVlineX4",
+        },
+        {
+            id: 11,
+            duongDanAnh: "tennis1.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/pr0OfLxd95w",
+        },
+        {
+            id: 12,
+            duongDanAnh: "tennis2.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/N5OguIayQME",
+        },
+        {
+            id: 13,
+            duongDanAnh: "tennis3.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/DnyCdELosBM",
+        },
+        {
+            id: 14,
+            duongDanAnh: "tennis4.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/TdhRKORKUTE",
+        },
+        {
+            id: 15,
+            duongDanAnh: "tennis5.jpg",
+            duongDanYoutube: "https://www.youtube.com/embed/KrV9XK36U1A",
+        },
+    ]
+    function chonPhim(id){
+            for (let i = 0; i < danhSachPhim.length; i++){
+                if(danhSachPhim[i].id == id){
+                    console.log("đã vào đây");
+                    document.getElementsByClassName("banner-img")[0].src = danhSachPhim[i].duongDanAnh
+                }
+                if( danhSachPhim[i].id ==id){
+                    document.getElementById("banner-img")[0].src = danhSachPhim[i].duongDanYoutube
+                }
+            }
+        }
 
+</script>
 </html>

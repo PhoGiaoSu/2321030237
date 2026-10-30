@@ -88,6 +88,15 @@ margin:20px auto;
         justify-content: space-between;
     }
 }
-
-
+.phim:hover{
+    img{
+        height: 190px;
+        width: 190px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
 }
+
+
+
